@@ -7,14 +7,14 @@ export default function HeroSection() {
   return (
     <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
       <div className="space-y-10 text-center lg:text-left">
-        <h1 className="text-5xl lg-text-7xl font-bold">
+        <h1 className="text-2xl sm:text-5xl lg:text-7xl font-bold">
           Nice to meet you! 👋
           <br />
           <span className="underline underline-offset-8 decoration-green-500">
             {"I'm Satyabrata."}
           </span>
         </h1>
-        <p className="md:w-96 text-lg text-gray-300">
+        <p className="md:w-96 text-base sm:text-lg text-gray-300">
           {
             "Based in India, I'm a Fullstack developer passionate about building a modern web application that users love."
           }

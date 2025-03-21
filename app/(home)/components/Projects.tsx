@@ -38,7 +38,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="py-10 p-5 sm:p-0">
+    <div className="py-10 p-4 sm:p-0">
       <Title
         text="Projects 🎨"
         className="flex flex-col items-center justify-center rotate-6"
@@ -48,16 +48,20 @@ export default function Projects() {
         {projects.map((project, index) => {
           return (
             <Link target="_blank" href={project.link} key={index}>
-              <div className={cn("p-5 rounded-md", project.background)}>
+              <div className={cn("p-4 sm:p-5 rounded-md", project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
                   className="w-full space-y-5 cursor-pointer"
                 >
-                  <div className=" space-y-5 bg-black bg-opacity-50 pt-2 pb-2 pr-3 pl-3 rounded-sm">
-                    <h1 className=" text-2xl font-bold">{project.title}</h1>
+                  <div className=" space-y-4 bg-black bg-opacity-50 pt-2 pb-2 pr-3 pl-3 rounded-sm">
+                    <h1 className="text-lg sm:text-2xl font-bold">
+                      {project.title}
+                    </h1>
                     <div className="flex items-center gap-5">
                       {project.tech.map((Icon, index) => {
-                        return <Icon className="w-8 h-8" key={index} />;
+                        return (
+                          <Icon className="w-5 h-5 sm:w-8 sm:h-8" key={index} />
+                        );
                       })}
                     </div>
                   </div>
