@@ -16,11 +16,11 @@ export default function HeroSection() {
         </h1>
         <p className="md:w-96 text-lg text-gray-300">
           {
-            "Based in India, I'm a Fullstack developer passionate about building a modern aweb application that users love."
+            "Based in India, I'm a Fullstack developer passionate about building a modern web application that users love."
           }
         </p>
-        <Link href={"mailto:hello@satyabrata.xyz"} className="inline-block">
-          <Title text="Contact Me 📫"/>
+        <Link href={"mailto:hello@satyabrata.dev"} className="inline-block">
+          <Title text="Contact Me 📫" />
         </Link>
       </div>
 

@@ -17,21 +17,21 @@ export default function Projects() {
     {
       title: "Bright Store - Merchendice Store",
       tech: [SiWordpress, SiCss3],
-      link: "https://scbright.com",
+      link: "https://bright-store.scbright.com/",
       cover: "/portfolio2.jpg",
       background: "bg-green-500",
     },
     {
       title: "Coffee House - Cafe",
       tech: [SiWordpress, SiCss3],
-      link: "https://scbright.com",
+      link: "https://coffee.scbright.com/",
       cover: "/portfolio3.jpg",
       background: "bg-green-500",
     },
     {
       title: "Portfolio - My",
       tech: [SiWordpress, SiCss3],
-      link: "https://scbright.com",
+      link: "https://satyabrata.scbright.com/",
       cover: "/portfolio4.jpg",
       background: "bg-indigo-500",
     },
@@ -47,7 +47,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5">
         {projects.map((project, index) => {
           return (
-            <Link href={project.link} key={index}>
+            <Link target="_blank" href={project.link} key={index}>
               <div className={cn("p-5 rounded-md", project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
